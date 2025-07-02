@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Borges | AI Automation Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5d7adb; --secondary: #2a3b5f; --accent: #e069ce;
+            --background: #0e1825; --surface: #1e2937; --text: #e8eff9;
+            --glow: rgba(93, 122, 219, 0.3);
+        }
+        body {
+            background-color: var(--background); color: var(--text); font-family: 'Sora', sans-serif;
+            margin: 0; line-height: 1.7; text-align: center;
+        }
+        .container {
+            width: 90%; max-width: 900px; margin: 0 auto; padding: 3rem 0;
+        }
+        h1, h2, h3 { margin-bottom: 1rem; font-weight: 500; }
+        h1 { font-size: 2.8rem; background: linear-gradient(135deg, var(--text) 30%, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h2 { font-size: 2.2rem; color: var(--primary); margin-top: 4rem; margin-bottom: 2rem; }
+        p { max-width: 700px; margin: 0 auto 1.5rem auto; opacity: 0.9; }
+        .sub-headline { font-size: 1.25rem; margin-bottom: 3rem; }
+        .lang-toggle { position: fixed; top: 20px; right: 20px; z-index: 100; }
+        .lang-btn { background: none; border: 1px solid var(--surface); color: var(--text); padding: 0.5rem; cursor: pointer; font-size: 1.5rem; border-radius: 8px; transition: all 0.3s; }
+        .lang-btn:hover { background-color: var(--surface); }
+        .loom-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin-bottom: 2rem; }
+        .loom-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .case-studies { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; text-align: left; }
+        .card { background: var(--surface); padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
+        .card h3 { color: var(--primary); margin-top: 0; }
+        .card h4 { font-weight: 400; opacity: 0.8; margin-bottom: 1rem; }
+        .skills-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+        .skills-list li { background-color: var(--surface); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; }
+        footer { margin-top: 4rem; opacity: 0.8; }
+        footer a { color: var(--primary); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .container { padding: 2rem 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lang-toggle">
+        <button id="lang-switcher" class="lang-btn">🇧🇷</button>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 data-en="Lucas Borges" data-pt="Lucas Borges">Lucas Borges</h1>
+            <p class="sub-headline" data-en="AI Automation Engineer & Technical Product Manager" data-pt="Engenheiro de Automação IA & Gerente Técnico de Produto">AI Automation Engineer & Technical Product Manager</p>
+            <p data-en="I find the single biggest bottleneck in your operation and automate it out of existence." data-pt="Eu encontro o maior gargalo em sua operação e o automatizo até que ele deixe de existir.">I find the single biggest bottleneck in your operation and automate it out of existence.</p>
+        </header>
+
+        <section id="demo">
+            <h2 data-en="Proof of Concept: The Financial Agent" data-pt="Prova de Conceito: O Agente Financeiro">Proof of Concept: The Financial Agent</h2>
+            <div class="loom-container">
+                <!-- REPLACE 'YOUR_LOOM_VIDEO_ID' WITH THE ACTUAL ID FROM THE SHARE URL -->
+                <iframe src="https://www.loom.com/embed/YOUR_LOOM_VIDEO_ID" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <p data-en="This video demonstrates an AI agent built for the finance industry. It automates complex portfolio analysis and reporting. The underlying engine is modular: for real estate, we connect it to Zillow and MLS data; for law, to case management systems. This demo shows the engine's power to reason, analyze data, and deliver actionable insights." data-pt="Este vídeo demonstra um agente de IA que construí para o setor financeiro. Ele automatiza análises complexas e otimização de portfólio. O motor de IA é modular: para o setor imobiliário, o conectamos à Zillow e dados de MLS; para o jurídico, a sistemas de gestão de casos. O demo mostra a capacidade do motor de raciocinar, analisar dados e entregar insights acionáveis.">This video demonstrates an AI agent built for the finance industry...</p>
+        </section>
+
+        <section id="case-studies">
+            <h2 data-en="Selected Projects & Results" data-pt="Projetos & Resultados Selecionados">Selected Projects & Results</h2>
+            <div class="case-studies">
+                <div class="card">
+                    <h3 data-en="Tacen (Crypto DEX)" data-pt="Tacen (DEX Cripto)">Tacen (Crypto DEX)</h3>
+                    <h4 data-en="Automating a $21M Fundraise" data-pt="Automatizando uma Captação de $21M">Automating a $21M Fundraise</h4>
+                    <p><strong data-en="Challenge:" data-pt="Desafio:">Challenge:</strong> <span data-en="Drowning in manual KYC checks during a high-stakes token sale." data-pt="Processar manualmente centenas de pedidos de investimento, arriscando a perda de investidores.">Drowning in manual KYC checks...</span></p>
+                    <p><strong data-en="Solution:" data-pt="Solução:">Solution:</strong> <span data-en="Architected an end-to-end automation engine with Zapier, PandaDoc, and Pipedrive." data-pt="Criei um motor de automação de ponta a ponta com Zapier, PandaDoc e Pipedrive.">Architected an end-to-end automation engine...</span></p>
+                    <p><strong data-en="Result:" data-pt="Resultado:">Result:</strong> <span data-en="Cut manual processing time by ~90% and processed $5M+ in transactions, enabling a successful $21M fundraise." data-pt="Reduzi o tempo de processamento manual em ~90% e processei +$5M em transações, viabilizando uma captação de $21M.">Cut manual processing time by ~90%...</span></p>
+                </div>
+                <div class="card">
+                    <h3 data-en="Hypha (Web3)" data-pt="Hypha (Web3)">Hypha (Web3)</h3>
+                    <h4 data-en="Lead Intelligence Pipeline" data-pt="Pipeline de Inteligência de Leads">Lead Intelligence Pipeline</h4>
+                    <p><strong data-en="Challenge:" data-pt="Desafio:">Challenge:</strong> <span data-en="Scaling personalized business development with a lean executive team." data-pt="Escalar a prospecção de parceiros com uma equipe enxuta.">Scaling personalized business development...</span></p>
+                    <p><strong data-en="Solution:" data-pt="Solução:">Solution:</strong> <span data-en="Built an automated pipeline that scraped public data, enriched contacts, and synthesized a custom 'solution thesis' for each prospect." data-pt="Construí um pipeline automatizado que extraiu dados, enriqueceu contatos e sintetizou uma 'tese de solução' para cada lead.">Built an automated pipeline...</span></p>
+                    <p><strong data-en="Result:" data-pt="Resultado:">Result:</strong> <span data-en="Generated a smart-list of 70+ hyper-personalized, qualified leads in 2 weeks." data-pt="Gerei uma lista com mais de 70 leads qualificados e hiper-personalizados em 2 semanas.">Generated a smart-list of 70+...</span></p>
+                </div>
+                <div class="card">
+                    <h3 data-en="Grupo Vega (In Progress)" data-pt="Grupo Vega (Em Andamento)">Grupo Vega (In Progress)</h3>
+                    <h4 data-en="Sales Funnel Optimization" data-pt="Otimização do Funil de Vendas">Sales Funnel Optimization</h4>
+                    <p><strong data-en="Challenge:" data-pt="Desafio:">Challenge:</strong> <span data-en="A lead response time of up to 48 hours, resulting in lost sales to competitors." data-pt="Um tempo de resposta para novos leads de até 48 horas, resultando em perda de vendas.">A lead response time of up to 48 hours...</span></p>
+                    <p><strong data-en="Solution:" data-pt="Solução:">Solution:</strong> <span data-en="An AI agent for WhatsApp pre-qualification, engaging and qualifying leads in under 5 minutes, 24/7." data-pt="Um agente de IA para pré-qualificação via WhatsApp, que engaja e qualifica leads em menos de 5 minutos, 24/7.">An AI agent for WhatsApp pre-qualification...</span></p>
+                    <p><strong data-en="Result (Expected):" data-pt="Resultado (Esperado):">Result (Expected):</strong> <span data-en="Drastic reduction in response time, increased conversion rate, and freeing up the sales team to focus on hot leads." data-pt="Redução drástica no tempo de resposta e aumento na conversão, liberando a equipe de vendas.">Drastic reduction in response time...</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 data-en="My Toolbox" data-pt="Minhas Ferramentas">My Toolbox</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>CrewAI</li>
+                <li>DSPy</li>
+                <li>RAG</li>
+                <li>Zapier</li>
+                <li>Pipedrive & CRM APIs</li>
+                <li>GPT Prompt Engineering</li>
+                <li>Discord/Telegram/WhatsApp Bots</li>
+                <li>Meta Ads Manager</li>
+                <li>SQL</li>
+                <li>Process Automation</li>
+                <li>Technical Product Management</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p><a href="mailto:l.b.totrace@gmail.com" data-en="Get in Touch" data-pt="Entre em Contato">Get in Touch</a> | <a href="YOUR_LINKEDIN_URL" target="_blank">LinkedIn</a></p>
+            <p>© 2025 Lucas Borges. Backed by Odysseus Labs.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const langSwitcher = document.getElementById('lang-switcher');
+            const elements = document.querySelectorAll('[data-en], [data-pt]');
+            
+            let currentLang = 'en';
+
+            function setLanguage(lang) {
+                elements.forEach(el => {
+                    el.textContent = el.dataset[lang];
+                });
+                langSwitcher.textContent = lang === 'en' ? '🇧🇷' : '🇺🇸';
+                document.documentElement.lang = lang === 'en' ? 'en' : 'pt-BR';
+                currentLang = lang;
+            }
+
+            langSwitcher.addEventListener('click', () => {
+                const newLang = currentLang === 'en' ? 'pt' : 'en';
+                setLanguage(newLang);
+            });
+        });
+    </script>
+</body>
+</html>
